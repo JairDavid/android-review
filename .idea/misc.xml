@@ -3,13 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/drawable/corner.xml" value="0.151" />
+        <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/drawable/corner_bottom.xml" value="0.151" />
+        <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/drawable/ic_baseline_assignment_24.xml" value="0.151" />
         <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2115" />
+        <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/drawable/ic_splash.xml" value="0.151" />
         <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout-v31/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/activity_contact_list.xml" value="0.22" />
         <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/activity_custom_contact_list.xml" value="0.2" />
         <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/activity_form_data.xml" value="0.22" />
-        <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/activity_information.xml" value="0.33" />
-        <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/activity_information.xml" value="0.2" />
+        <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/activity_view_info.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/item_holder.xml" value="0.25" />
         <entry key="..\:/Users/theyiro12/3D Objects/Practice-Design/app/src/main/res/layout/main_activity.xml" value="0.20416666666666666" />

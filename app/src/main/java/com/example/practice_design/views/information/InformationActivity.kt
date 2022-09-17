@@ -14,17 +14,18 @@ class InformationActivity : AppCompatActivity() {
         binding = ActivityInformationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonForm.setOnClickListener {
+        binding.card1.setOnClickListener {
             startActivity(Intent(this, FormDataActivity::class.java))
             finish()
         }
 
-        binding.buttonList.setOnClickListener {
+        binding.card2.setOnClickListener {
             startActivity(Intent(this, ContactListActivity::class.java))
         }
 
-        binding.buttonCustomList.setOnClickListener {
+        binding.card3.setOnClickListener {
             startActivity(Intent(this, CustomContactListActivity::class.java))
         }
+
     }
 }
