@@ -1,10 +1,12 @@
 package com.example.practice_design.contact
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.example.practice_design.databinding.ActivityContactListBinding
+import com.example.practice_design.views.information.InformationActivity
 
 class ContactListActivity : AppCompatActivity() {
     lateinit var binding:ActivityContactListBinding
@@ -21,6 +23,11 @@ class ContactListActivity : AppCompatActivity() {
 
         binding.contactList.setOnItemClickListener { adapterView, view, index, id ->
             Toast.makeText(this,data[index], Toast.LENGTH_SHORT).show()
+        }
+
+        binding.backButton.setOnClickListener {
+            startActivity(Intent(this, InformationActivity::class.java))
+            finish()
         }
     }
 }

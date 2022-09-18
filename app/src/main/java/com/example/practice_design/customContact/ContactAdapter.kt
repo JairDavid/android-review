@@ -34,6 +34,12 @@ class ContactAdapter(contex:Context): ListAdapter<Person, ContactAdapter.ViewHol
             binding.check.setOnClickListener {
                 Toast.makeText(adapterContext, "${item.name}", Toast.LENGTH_SHORT).show()
             }
+            binding.delete.setOnClickListener {
+                Toast.makeText(adapterContext, "${item.name}" + " Cancel", Toast.LENGTH_SHORT).show()
+            }
+            binding.cardBinding.setOnClickListener {
+
+            }
         }
     }
 
