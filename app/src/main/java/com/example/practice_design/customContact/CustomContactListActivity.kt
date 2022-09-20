@@ -28,5 +28,6 @@ class CustomContactListActivity : AppCompatActivity() {
         adapter.submitList(data)
         adapter.notifyDataSetChanged()
 
+
     }
 }

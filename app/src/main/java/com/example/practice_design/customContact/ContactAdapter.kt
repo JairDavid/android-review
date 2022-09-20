@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.practice_design.ItemContactActivity
 import com.example.practice_design.databinding.ItemHolderBinding
+import android.content.Intent
 
 class ContactAdapter(contex:Context): ListAdapter<Person, ContactAdapter.ViewHolder>(DiffUtilCallback) {
     private val adapterContext = contex
@@ -37,8 +39,11 @@ class ContactAdapter(contex:Context): ListAdapter<Person, ContactAdapter.ViewHol
             binding.delete.setOnClickListener {
                 Toast.makeText(adapterContext, "${item.name}" + " Cancel", Toast.LENGTH_SHORT).show()
             }
-            binding.cardBinding.setOnClickListener {
-
+            binding.root.setOnClickListener() {
+                adapterContext.apply {
+                    startActivity(Intent(this, ItemContactActivity::class.java)
+                        .putExtra("person", item))
+                }
             }
         }
     }
