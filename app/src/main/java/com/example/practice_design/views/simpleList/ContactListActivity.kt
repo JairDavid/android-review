@@ -1,4 +1,4 @@
-package com.example.practice_design.contact
+package com.example.practice_design.views.simpleList
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.example.practice_design.databinding.ActivityContactListBinding
-import com.example.practice_design.views.information.InformationActivity
+import com.example.practice_design.MainMenuActivity
 
 class ContactListActivity : AppCompatActivity() {
     lateinit var binding:ActivityContactListBinding
@@ -26,7 +26,7 @@ class ContactListActivity : AppCompatActivity() {
         }
 
         binding.backButton.setOnClickListener {
-            startActivity(Intent(this, InformationActivity::class.java))
+            startActivity(Intent(this, MainMenuActivity::class.java))
             finish()
         }
     }

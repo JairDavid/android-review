@@ -1,4 +1,4 @@
-package com.example.practice_design.customContact
+package com.example.practice_design.views.customList
 
 import com.example.practice_design.domain.Person
 import android.content.Context
@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.practice_design.ItemContactActivity
 import com.example.practice_design.databinding.ItemHolderBinding
 import android.content.Intent
 

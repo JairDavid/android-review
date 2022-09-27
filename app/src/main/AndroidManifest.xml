@@ -16,22 +16,37 @@
         android:theme="@style/Theme.PracticeDesign"
         tools:targetApi="31">
         <activity
-            android:name=".ItemContactActivity"
+            android:name=".views.crudMVP.CrudMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".customContact.CustomContactListActivity"
+            android:name=".views.crudMVP.view.crudViews.CrudDeleteActivity"
             android:exported="false" />
         <activity
-            android:name=".contact.ContactListActivity"
+            android:name=".views.crudMVP.view.crudViews.CrudListActivity"
             android:exported="false" />
         <activity
-            android:name=".views.information.ViewInfoActivity"
+            android:name=".views.crudMVP.view.crudViews.CrudCreateActivity"
             android:exported="false" />
         <activity
-            android:name=".views.information.FormDataActivity"
+            android:name=".views.calculatorMVP.view.CalculatorActivity"
             android:exported="false" />
         <activity
-            android:name=".views.information.InformationActivity"
+            android:name="com.example.practice_design.views.customList.ItemContactActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.practice_design.views.customList.CustomContactListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.practice_design.views.simpleList.ContactListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.simpleForm.SeeInfoFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.simpleForm.SimpleFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

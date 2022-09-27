@@ -1,4 +1,4 @@
-package com.example.practice_design.views.information
+package com.example.practice_design.views.simpleForm
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,10 +6,11 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
+import com.example.practice_design.MainMenuActivity
 import com.example.practice_design.databinding.ActivityViewInfoBinding
 import com.example.practice_design.domain.Person
 
-class ViewInfoActivity : AppCompatActivity() {
+class SeeInfoFormActivity : AppCompatActivity() {
     lateinit var binding: ActivityViewInfoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +22,7 @@ class ViewInfoActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             Toast.makeText(this, "Redirecting...", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, InformationActivity::class.java))
+            startActivity(Intent(this, MainMenuActivity::class.java))
             finish()
         }, 2000)
     }

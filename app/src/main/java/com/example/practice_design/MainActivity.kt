@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.example.practice_design.databinding.ActivityMainBinding
-import com.example.practice_design.views.information.InformationActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -19,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     fun launchApp(){
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, InformationActivity::class.java))
+            startActivity(Intent(this, MainMenuActivity::class.java))
             finish()
         },2000)
     }

@@ -1,8 +1,10 @@
-package com.example.practice_design.customContact
+package com.example.practice_design.views.customList
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.practice_design.MainMenuActivity
 import com.example.practice_design.databinding.ActivityCustomContactListBinding
 import com.example.practice_design.domain.Person
 
@@ -28,6 +30,10 @@ class CustomContactListActivity : AppCompatActivity() {
         adapter.submitList(data)
         adapter.notifyDataSetChanged()
 
+        binding.backRecyclerMenu.setOnClickListener{
+            startActivity(Intent(this, MainMenuActivity::class.java))
+            finish()
+        }
 
     }
 }

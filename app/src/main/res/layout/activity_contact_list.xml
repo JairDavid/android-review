@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".contact.ContactListActivity">
+    tools:context=".views.simpleList.ContactListActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"

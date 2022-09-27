@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".views.information.FormDataActivity">
+    tools:context=".views.simpleForm.SimpleFormActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -49,4 +49,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="Save information"/>
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Regresar"/>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.practice_design
+package com.example.practice_design.views.customList
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
