@@ -3,11 +3,12 @@ package com.example.practice_design.views.retrofit2.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.practice_design.R
 import com.example.practice_design.databinding.RetrofitItemHolderBinding
-import com.example.practice_design.domain.Person
 
 class UserAdapter(context:Context):ListAdapter<User, UserAdapter.ViewHolder>(DiffUtilCallback) {
     private val adapterContext = context
@@ -21,11 +22,27 @@ class UserAdapter(context:Context):ListAdapter<User, UserAdapter.ViewHolder>(Dif
         holder.bind(getItem(position), position)
     }
 
-
-
     inner class ViewHolder(private val binding:RetrofitItemHolderBinding):RecyclerView.ViewHolder(binding.root) {
         fun bind(item: User, position: Int){
-            //TODO
+            when(item.status){
+                "inactive" -> {
+                    binding.colorStatus.setBackgroundColor(
+                        ContextCompat.getColor(
+                            adapterContext,
+                            R.color.red
+                        )
+                    )
+                }
+                "active" -> {
+                    binding.colorStatus.setBackgroundColor(
+                        ContextCompat.getColor(
+                            adapterContext,
+                            R.color.green
+                        )
+                    )
+                }
+            }
+            binding.retrofitUserText.text = item.name.toString()
         }
     }
 
@@ -38,6 +55,5 @@ class UserAdapter(context:Context):ListAdapter<User, UserAdapter.ViewHolder>(Dif
             return newItem == oldItem
         }
     }
-
 
 }
