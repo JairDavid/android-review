@@ -15,6 +15,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitViewActivity : AppCompatActivity() {
     lateinit var binding:ActivityRetrofitViewBinding
+    lateinit var userList:List<User>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding  = ActivityRetrofitViewBinding.inflate(layoutInflater)
