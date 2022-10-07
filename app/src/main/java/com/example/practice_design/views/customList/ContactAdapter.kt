@@ -38,7 +38,7 @@ class ContactAdapter(contex:Context): ListAdapter<Person, ContactAdapter.ViewHol
             binding.delete.setOnClickListener {
                 Toast.makeText(adapterContext, "${item.name}" + " Cancel", Toast.LENGTH_SHORT).show()
             }
-            binding.root.setOnClickListener() {
+            binding.root.setOnClickListener {
                 adapterContext.apply {
                     startActivity(Intent(this, ItemContactActivity::class.java)
                         .putExtra("person", item))

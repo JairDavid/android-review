@@ -2,18 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:gravity="center"
-    android:layout_margin="5dp">
-    <View
-        android:id="@+id/colorStatus"
-        android:background="@color/black"
-        android:layout_width="10dp"
-        android:layout_height="match_parent"/>
-    <TextView
-        android:id="@+id/retrofitUserText"
+    android:gravity="center">
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:text="Jair Vasquez"/>
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+        <View
+            android:id="@+id/colorStatus"
+            android:background="@color/black"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/retrofitUserText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:text="Jair Vasquez"/>
+    </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

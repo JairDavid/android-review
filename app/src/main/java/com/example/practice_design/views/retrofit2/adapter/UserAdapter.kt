@@ -1,6 +1,7 @@
 package com.example.practice_design.views.retrofit2.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practice_design.R
 import com.example.practice_design.databinding.RetrofitItemHolderBinding
+import com.example.practice_design.views.retrofit2.view.DetailRestActivity
 
 class UserAdapter(context:Context):ListAdapter<User, UserAdapter.ViewHolder>(DiffUtilCallback) {
     private val adapterContext = context
@@ -18,7 +20,7 @@ class UserAdapter(context:Context):ListAdapter<User, UserAdapter.ViewHolder>(Dif
         return ViewHolder(item)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: UserAdapter.ViewHolder, position: Int) {
         holder.bind(getItem(position), position)
     }
 
@@ -42,7 +44,16 @@ class UserAdapter(context:Context):ListAdapter<User, UserAdapter.ViewHolder>(Dif
                     )
                 }
             }
-            binding.retrofitUserText.text = item.name.toString()
+            binding.retrofitUserText.text = item.name
+
+            binding.root.setOnClickListener {
+                adapterContext.apply {
+                    val intent = Intent(this, DetailRestActivity::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    intent.putExtra("id", item.id)
+                    startActivity(intent)
+                }
+            }
         }
     }
 

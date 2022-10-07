@@ -9,4 +9,6 @@ interface APIService {
     @GET
     suspend fun getAllUsers(@Url url:String):Response<List<User>>
 
+    @GET
+    suspend fun getUserById(@Url url: String):Response<User>
 }

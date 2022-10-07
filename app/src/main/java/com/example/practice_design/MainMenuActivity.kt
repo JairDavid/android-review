@@ -7,6 +7,7 @@ import com.example.practice_design.views.simpleList.ContactListActivity
 import com.example.practice_design.views.customList.CustomContactListActivity
 import com.example.practice_design.databinding.ActivityMainMenuBinding
 import com.example.practice_design.views.calculatorMVP.view.CalculatorActivity
+import com.example.practice_design.views.retrofit2.MenuRestActivity
 import com.example.practice_design.views.retrofit2.view.RetrofitViewActivity
 import com.example.practice_design.views.simpleForm.SimpleFormActivity
 import kotlinx.android.synthetic.main.activity_main_menu.*
@@ -39,7 +40,7 @@ class MainMenuActivity : AppCompatActivity() {
         }
 
         binding.card6.setOnClickListener{
-            startActivity(Intent(this, RetrofitViewActivity::class.java))
+            startActivity(Intent(this, MenuRestActivity::class.java))
         }
 
     }

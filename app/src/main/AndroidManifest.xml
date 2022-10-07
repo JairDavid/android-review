@@ -17,6 +17,27 @@
         android:theme="@style/Theme.PracticeDesign"
         tools:targetApi="31">
         <activity
+            android:name=".views.retrofit2.view.DetailRestActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.retrofit2.view.RegisterRestActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".views.retrofit2.MenuRestActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".views.retrofit2.view.RetrofitViewActivity"
             android:exported="false">
             <meta-data
